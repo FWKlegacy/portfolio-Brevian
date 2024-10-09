@@ -24,7 +24,7 @@ function App() {
         backToTopButton.removeEventListener("click", () => {});
       }
     };
-  }, []); // Empty dependency array means this runs once on mount
+  }, []);
 
   return (
     <div className='main-container'>
