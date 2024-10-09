@@ -3,8 +3,29 @@ import React from 'react';
 import './App.css';
 import videoSource from './images/gif.mp4';
 import logo from './images/brave.jpg';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    const backToTopButton = document.getElementById("backToTop");
+    if (backToTopButton) {
+      backToTopButton.addEventListener("click", (event) => {
+        event.preventDefault(); 
+        window.scrollTo({
+          top: 0, 
+          behavior: "smooth",
+        });
+      });
+    }
+
+    // Clean up the event listener on component unmount
+    return () => {
+      if (backToTopButton) {
+        backToTopButton.removeEventListener("click", () => {});
+      }
+    };
+  }, []); // Empty dependency array means this runs once on mount
+
   return (
     <div className='main-container'>
     <div className="App">
@@ -52,10 +73,19 @@ function App() {
   </div>
 </section>
 
-      <section id="skills">
-        <h3>Skills</h3>
-        <p>JavaScript, React, Node.js, Python, HTML5, CSS, Git</p>
-      </section>
+<section id="skills">
+  <h3>Skills</h3>
+  <ul className="skills-list">
+    <li>JavaScript</li>
+    <li>React</li>
+    <li>Node.js</li>
+    <li>Python</li>
+    <li>HTML5</li>
+    <li>CSS</li>
+    <li>Git</li>
+  </ul>
+</section>
+
 
       <section id="contact">
         <h3>Contact Me</h3>
@@ -64,6 +94,12 @@ function App() {
 ">here</a>
         </p>
         <p>Email: <a href="mailto:your.email@example.com">wanjalawafulabrevian@gmail.com</a></p>
+        <p>
+    <a href="#top" id="backToTop" className="back-to-top" aria-label="Back to top">
+      ↑
+      <i className="fas fa-arrow-up"></i>
+    </a>
+  </p>
       </section>
 
       <footer>
