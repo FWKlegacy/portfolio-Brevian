@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <img src={logo} alt="Logo" className="header-logo" />
-      <h1>Software developer</h1>
+      <h1>Software Developer</h1>
         <nav>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
