@@ -31,20 +31,24 @@ function App() {
     <div className="App">
       <header className="App-header">
       <img src={logo} alt="Logo" className="header-logo" />
-      <h1>Software Developer</h1>
+      <h1>Wafula Brevian</h1>
         <nav>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
+          <a href="#skills">Services</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <section id="about">
         <h3>About Me</h3>
-        <p>
-        I am an analytical and detail oriented Software Engineer with stellar communication skills. Adept at bringing team members together to reach a common goal on time and under budget. Conceptualising app solutions with the latest technology, design theory, and creativity
-        </p>
+        <p> 
+My name is Brevian Wafula.I am an analytical, detail-oriented, and results-driven Software Engineer with outstanding communication and leadership abilities. I excel at fostering collaboration within teams to achieve shared goals efficiently, meeting project deadlines, and ensuring delivery within budget constraints. With a strong focus on innovation, I specialize in conceptualizing and developing high-performance applications that integrate the latest technologies, design theory, and creative problem-solving.
+
+Proficient in front-end technologies such as HTML5, CSS, JavaScript, and React.js, I create dynamic, responsive, and user-centric interfaces. On the back-end, I leverage Python and the Flask framework to build robust, scalable, and secure systems. With hands-on experience in version control using Git, database management using MySQL, and project tracking with Jira, I ensure a streamlined development process.
+
+I thrive in agile environments, consistently delivering high-quality software solutions. I am passionate about staying at the forefront of technological advancements, continuously learning new tools and methodologies to enhance both my technical skill set and the overall efficiency of the projects I contribute to.
+</p>
       </section>
             <section id="projects">
             <div className="video-background">
@@ -52,7 +56,7 @@ function App() {
                     <source src={videoSource} type="video/mp4" />
                 </video>
             </div>
-  <h2>My Projects</h2>
+  <h2>MY PROJECTS</h2>
 
   <div class="project-links">
     <div class="project-card">
@@ -74,15 +78,12 @@ function App() {
 </section>
 
 <section id="skills">
-  <h3>Skills</h3>
+  <h3>SERVICES OFFERED</h3>
   <ul className="skills-list">
-    <li>JavaScript</li>
-    <li>React</li>
-    <li>Node.js</li>
-    <li>Python</li>
-    <li>HTML5</li>
-    <li>CSS</li>
-    <li>Git</li>
+    <li>Web design</li>
+    <li>Web development</li>
+    <li>Mobile development</li>
+    <li>IT Consultancy</li>
   </ul>
 </section>
 
